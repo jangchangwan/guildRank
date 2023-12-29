@@ -1,0 +1,223 @@
+@font-face {
+  font-family: 'NEXON Lv2 Gothic';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "NEXON Lv2 Gothic";
+}
+
+:root {	
+  --primary01: #ec008c;
+  --primary02: #351b6f;
+  --primary03: #0087d4;
+  --primary04: #b3bbc0;
+
+  --btn01: #EF1295;
+  --btn02: #59428E;
+  --btn03: #138CD1;
+  --btn04: #E7ECF1;
+  --btn05: #D3D9DE;
+  --btn01_hover: #F45AB5;
+  --btn02_hover: #8B7BB0;
+  --btn03_hover: #5BAEDF;
+  --btn04_hover: #b3bbc0;
+  --btn05_hover: #f2f3f7;
+  
+  --font01: #222;
+  --font02: #444;
+  --font03: #949CA5;
+  --font04: #fff;
+
+  --bg01: #F2F3F7;
+  --bg_lnb: #2f1862;
+  --bg_lnb_2depth_selected: #59428E;
+  --bg_lnb_3depth_selected: #351b6f;
+  --bg_table_header: #E7ECF1;
+  --bg_table_body: #F2F3F7;
+  --bg_table_hover: #fff2f2;
+
+  --border01: #b3bbc0;
+  --border02: #d3d9de;
+  --border03: #d0d9e3;
+
+  --status01: #ff4d4d;
+  --status01_bg: #ffd6d6;
+  --status02: #0087d4;
+  --status02_bg: #cfecfc;
+  --status03: #f89a03;
+  --status03_bg: #ffe09b;
+  --status04: #5b536d;
+  --status04_bg: #e7ecf1;
+  --status05: #34ad7a;
+  --status05_bg: #bdefd9;
+
+}
+
+.App { display: flex; justify-content: center; padding-top: 20px;}
+
+
+@media (max-width: 320px) {
+  .App {padding: 0 20px;}
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+  .App {padding: 0 20px;}
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+  .App {padding: 0 5%;}
+}
+
+@media (min-width:1281px) {
+  .App {padding: 0 20%;}
+}
+
+
+
+::-webkit-scrollbar {width: 10px; height: 10px; }  /* 스크롤바의 width */
+::-webkit-scrollbar-track {background: transparent; }  /* 스크롤바의 전체 배경색 */
+::-webkit-scrollbar-thumb { background: var(--primary04);}   /* 스크롤바 색 */
+::-webkit-scrollbar-button {display: none;}  /* 위 아래 버튼 (버튼 없애기를 함) */
+
+.m0 {margin: 0;}
+.m1 {margin: 4px;}
+.m2 {margin: 8px;}
+.m3 {margin: 12px;}
+.m4 {margin: 16px;}
+.m5 {margin: 20px;}
+
+.ml0 {margin-left: 0;}
+.ml1 {margin-left: 4px;}
+.ml2 {margin-left: 8px;}
+.ml3 {margin-left: 12px;}
+.ml4 {margin-left: 16px;}
+.ml5 {margin-left: 20px;}
+
+.mr0 {margin-right: 0;}
+.mr1 {margin-right: 4px;}
+.mr2 {margin-right: 8px;}
+.mr3 {margin-right: 12px;}
+.mr4 {margin-right: 16px;}
+.mr5 {margin-right: 20px;}
+
+.mt0 {margin-top: 0;}
+.mt1 {margin-top: 4px;}
+.mt2 {margin-top: 8px;}
+.mt3 {margin-top: 12px;}
+.mt4 {margin-top: 16px;}
+.mt5 {margin-top: 20px;}
+
+.mb0 {margin-bottom: 0;}
+.mb1 {margin-bottom: 4px;}
+.mb2 {margin-bottom: 8px;}
+.mb3 {margin-bottom: 12px;}
+.mb4 {margin-bottom: 16px;}
+.mb5 {margin-bottom: 20px;}
+/* //margin */
+
+/* padding */
+.p0 {padding: 0;}
+.p1 {padding: 4px;}
+.p2 {padding: 8px;}
+.p3 {padding: 12px;}
+.p4 {padding: 16px;}
+.p5 {padding: 20px;}
+
+.pl0 {padding-left: 0;}
+.pl1 {padding-left: 4px;}
+.pl2 {padding-left: 8px;}
+.pl3 {padding-left: 12px;}
+.pl4 {padding-left: 16px;}
+.pl5 {padding-left: 20px;}
+
+.pr0 {padding-right: 0;}
+.pr1 {padding-right: 4px;}
+.pr2 {padding-right: 8px;}
+.pr3 {padding-right: 12px;}
+.pr4 {padding-right: 16px;}
+.pr5 {padding-right: 20px;}
+
+.pt0 {padding-top: 0;}
+.pt1 {padding-top: 4px;}
+.pt2 {padding-top: 8px;}
+.pt3 {padding-top: 12px;}
+.pt4 {padding-top: 16px;}
+.pt5 {padding-top: 20px;}
+
+.pb0 {padding-bottom: 0;}
+.pb1 {padding-bottom: 4px;}
+.pb2 {padding-bottom: 8px;}
+.pb3 {padding-bottom: 12px;}
+.pb4 {padding-bottom: 16px;}
+.pb5 {padding-bottom: 20px;}
+
+/* Select */
+.select_type {display:inline-block; position:relative; vertical-align:middle;}
+.select_type label {position:absolute !important; height:1px; width:1px; overflow:hidden; clip:rect(1px,1px,1px,1px);}
+.select_type select {overflow:hidden; display:block; width:130px;  height:32px; line-height:32px; color:var(--font01); margin: 0; padding:0 18px 0 12px; border:1px solid #b1bed5; border-radius:3px; letter-spacing:-1px; background:#fff url("./images/ico_form_open.svg") right 7px center no-repeat;  text-align:left; border-radius:5px;  appearance:none; -webkit-appearance:none;}
+.select_type select::-ms-expand {opacity:0;}/* ie10부터 적용 */
+.select_type + .select_type {margin-left:10px;}
+.select_type select:hover,
+.select_type select:focus,
+.select_type select:active {border:1px solid var(--btn02);}
+.select_type select.active {border:1px solid var(--btn02);}
+.select_type select.placeholder {color: var(--font03); }
+.select_type select:disabled {background-color: var(--status04_bg); pointer-events: none;}
+/* //Select */
+
+/* input[type="text"] */
+input.textInput {width: 176px; height: 30px; padding: 0 12px; border: 1px solid var(--border02); border-radius: 2px; color: var(--font01);}
+input.textInput::placeholder {color: var(--font03);}
+input.textInput:focus {border: 1px solid var(--btn02);}
+input.textInput:read-only {background-color: var(--status04_bg); color: var(--font01); pointer-events: none;}
+input.textInput:disabled {background-color: var(--status04_bg); color: var(--font03); pointer-events: none;}
+input.textInput.err {border: 1px solid var(--status01);}
+input.textInput.err + .comment {position: absolute; color: var(--status01); margin-top: 6px;}
+/* //input[type="text"]  */
+
+.btn_primary {background-color: var(--btn01); color: var(--font04);}
+.btn_primary:hover {background-color: var(--btn01_hover); color: var(--font04);}
+.btn_primary:disabled {background-color: var(--status04_bg); color: var(--font03); pointer-events: none;} 
+
+.btn_white {background-color: #fff; color: var(--font01);}
+.btn_white:hover {background-color: var(--btn05_hover); color: var(--font01);}
+.btn_white:disabled {background-color: var(--status04_bg); color: var(--font03); pointer-events: none;}
+
+.btn_secondary {background-color: var(--btn02); color: var(--font04);}
+.btn_secondary:hover {background-color: var(--btn02_hover); color: var(--font04);}
+.btn_secondary:disabled {background-color: var(--status04_bg); color: var(--font03); pointer-events: none;}
+
+.btn_sm {display: flex; align-items: center; padding: 0 10px; font-weight: 500; border-radius: 6px; height: 32px; border: 1px solid var(--border02);}
+.btn_lg {display: flex; align-items: center; padding: 0 20px; font-weight: 500; border-radius: 6px; height: 36px; border: 1px solid var(--border02);}
+
+
+.table_wrap .custom_tb4 { background-color: var(--bg_table_header); color: var(--font01);}
+.table_wrap .custom_tb4 table { width: 100%; table-layout: fixed;background-color: var(--font04); }
+.table_wrap .custom_tb4 table tr {height: 40px; border-bottom: 1px solid var(--border01); text-align: center;}
+.table_wrap .custom_tb4 table thead tr { display: table-row;  width: 100%; height: 40px; table-layout: fixed;  border-bottom: 1px solid var(--border01); z-index: 99;}
+.table_wrap .custom_tb4 table thead tr th { height: 40px; background-color: var(--bg_table_header); border-right:1px solid var(--border02);}
+.table_wrap .custom_tb4 table thead tr th:last-child { border-right:none;}
+.table_wrap .custom_tb4 table tbody tr { height: 40px; background-color: var(--bg_table_header);}
+.custom_tb4 td.sentence {text-align: left; padding: 0px 10px;}
+.custom_tb4 th.sentence {text-align: left; padding: 0px 10px;}
+.custom_tb4 td.right {text-align: right; padding: 0px 10px;}
+.custom_tb4 table tbody tr:nth-child(2n-1) {background-color: var(--font04);}
+.custom_tb4 table tbody tr:nth-child(2n) {background-color: var(--bg_table_body);}
+.custom_tb4 table tbody th {background-color: var(--bg_table_header);}
+.custom_tb4 table tbody tr:hover {background-color: var(--bg_table_hover);}
+.custom_tb4 table tbody td > button {margin: 0 auto;}
+.custom_tb4.no_hover table tbody tr {background-color: var(--font04);}
+
+.font_sm {font-size: 12px;}
+.title {text-align: center; font-size: 32px; font-weight: bold;}
+.input_box { display: flex; width: 100%; justify-content: center; margin: 20px 0;}
+.name_info{ display: flex; flex-direction: column; justify-content: center; align-items: flex-start;}
+.name_info a{text-decoration: underline; font-weight: bold;}
+.character_box {display: flex; justify-self: start;}
+
+.custom_tb4 .first {display: flex; width: 20px; height: 20px; margin-left: 10px; border-radius: 4px; align-items: center; justify-content: center; background-color: rgb(255, 185, 59); color: #fff;}
+.custom_tb4 .second {display: flex; width: 20px; height: 20px; margin-left: 10px; border-radius: 4px; align-items: center; justify-content: center; background-color: rgb(221, 233, 243);}
+.custom_tb4 .third {display: flex; width: 20px; height: 20px; margin-left: 10px; border-radius: 4px; align-items: center; justify-content: center; background-color: rgb(202, 147, 114); color: #fff;}
