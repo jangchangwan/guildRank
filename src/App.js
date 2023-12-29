@@ -52,9 +52,7 @@ function App() {
         date: DATE
       }
       const memberInfo = await sendRequest("character/stat?", params4);
-      await new Promise(resolve => setTimeout(resolve, 5000));
       const memberInfo2 = await sendRequest("character/basic?", params4);
-      await new Promise(resolve => setTimeout(resolve, 5000));
       // eslint-disable-next-line no-new-object
 
       let userInfo = new Object();
@@ -86,7 +84,7 @@ function App() {
   // hook
   const sendRequest = (url, params) => {
     const baseURL = "https://open.api.nexon.com/maplestory/v1/";
-    const apiKey = "test_544ff5c995310beebf3a58070eec5b0db1b520de0f9663286b3d2c4753fe9e08b62d27ca281e038b5b718d8658806e4e";
+    const apiKey = "live_544ff5c995310beebf3a58070eec5b0d6fac91c29fb8e9ae7c2ffa015e84d73253e8274577a7ff33bcf0125491d1948f";
     const headers = {
       "x-nxopen-api-key" : apiKey,
     }
